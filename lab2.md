@@ -104,5 +104,7 @@ ps -p 1100 -o pid,ppid,cmd
 
 ## Context:
 `getpid()`: It returns the process ID which is assigned by th OS kernel to the running program.
-`getppid()`: It returns the Parent Process ID.
+
+`getppid()`: It returns the Parent Process ID. 
+
 `ps -p <PID> -o pid,ppid,cmd`: It displays the specific process attributes like PID, PPID and Command Name for the process verification.
