@@ -6,8 +6,8 @@ Welcome to the repository. This project contains documentation for various C pro
 
 ## Task Documentation
 
-* **[Task 1: C Compilation Pipeline](./docs/task1.md)** - Details on preprocessing, assembly, compiling and code execution.
-
+* **[lab 1: C Compilation Pipeline](./docs/lab1.md)** - Details on preprocessing, assembly, compiling and code execution.
+* **[Lab 2 - Task 1: Process Creation & Execution](./docs/lab2.md)** - C process timing using `sleep()`, execution, and process table filtering using `ps aux`
 ---
 
 ## 🛠️ Requirements
