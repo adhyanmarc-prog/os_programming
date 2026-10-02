@@ -4,7 +4,7 @@ This document details the step-by-step GCC compilation pipeline for `test.c`.
 
 ## Source Code (`test.c`)
 ```c
-#include <stdio.h>
+# include <stdio.h>
 
 int main(){
     printf("testing this task!!");
@@ -15,7 +15,7 @@ int main(){
 
 the above given program is the c program that we are going to compile and run.
 
-#Environment Setup
+# Environment Setup
 ```bash
 sudo apt install build-essential
 
@@ -23,7 +23,7 @@ gcc --version
 ```
 through the above given commands we can install build-essential and check its version.
 
-#Compilation Pipeline
+# Compilation Pipeline
 ```bash
 gcc -E test.c -o test.i
 
@@ -35,7 +35,7 @@ gcc test.o -o test
 ```
 above given are the c program compilation commands.
 
-#Program Execution
+# Program Execution
 ```bash
 ./test
 ```
