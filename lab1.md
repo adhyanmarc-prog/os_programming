@@ -1,4 +1,4 @@
-# Task 1: GCC Compilation Pipeline
+# Lab 1: GCC Compilation Pipeline
 
 This document details the step-by-step GCC compilation pipeline for `test.c`.
 
