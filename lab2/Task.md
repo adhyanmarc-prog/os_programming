@@ -1,4 +1,4 @@
-# Lab 2 - Task 1: Process Creation and Monitoring
+# Lab 1: Process Creation and Monitoring
 
 This task displays creating a simple C program (`black.c`) that runs for a certain time using `sleep()`, compiling it with GCC, executing the binary, and inspecting running processes using `ps aux`.
 
@@ -51,7 +51,7 @@ grep black filter outs the process output for process name black.
 
 ---
 
-# Lab 2 - Task 2: Process Identifiers (PID and PPID)
+# Lab 2: Process Identifiers (PID and PPID)
 
 This task shows how we can retrieve and inspect process identifiers in C using `getpid()` and `getppid()`, compile the program (`sugar.c`), run it in the background, and inspect its PID/PPID status from the terminal.
 
