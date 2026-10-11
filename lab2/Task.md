@@ -152,3 +152,36 @@ echo $?
 echo $?
 # Output should be 1 i.e negative input.
 ```
+
+# Lab 4: Standard I/O Streams:
+In OS there are two streams standard input (stdin) and standard output (stout). scanf reads from stdin and printf writs to stdout.
+
+## 1. Creating a c file:
+``` bash
+nano streams.c
+
+```
+
+## 2. Source Code (streams.c)
+``` c
+ #include <stdio.h>
+
+ int main() {
+ char name[50];
+
+ printf("Enter your name: ");
+ scanf("%s", name);
+
+ printf("Hello, %s! Welcome to OS Class.\n",
+ name);
+ return 0;
+ }
+```
+
+## 3. Terminal Execution:
+``` bash
+gcc streams.c -o streams
+./streams
+
+#enter any name Ram then the output will be Hello, Ram! Welcome to OS Class.
+```
