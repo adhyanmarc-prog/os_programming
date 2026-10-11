@@ -108,3 +108,47 @@ ps -p 1100 -o pid,ppid,cmd
 `getppid()`: It returns the Parent Process ID. 
 
 `ps -p <PID> -o pid,ppid,cmd`: It displays the specific process attributes like PID, PPID and Command Name for the process verification.
+
+
+# Lab 3: Exit Codes and OS Feedback.
+When a program finishes running an integer is given to the OS which is stored in $? by the shell. The integer 0 means success and any non 0 number like 1 error or failure.
+
+## 1. Creating c file:
+``` bash
+nano feed.c
+```
+## 2. Source Code (feed.c)
+``` c
+
+include <stdio.h>
+
+int main() {
+int num;
+printf("Enter a number (positive for success,
+negative for fail): ");
+scanf("%d", &num);
+
+if (num > 0) {
+printf("Success\n");
+return 0; // Tell OS: Success
+} else {
+printf("Failure\n");
+return 1; // Tell OS: Error
+ }
+ }
+```
+## 3. Execution and Verification:
+
+``` bash
+gcc feed.c -o feed
+
+./feed
+# Enter 5 and the output should be success.
+echo $?
+# Output should be 0 i.e positive input.
+
+./feed
+# Enter -5 this time the output should be Failure
+echo $?
+# Output should be 1 i.e negative input.
+```
