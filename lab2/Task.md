@@ -185,3 +185,49 @@ gcc streams.c -o streams
 
 #enter any name Ram then the output will be Hello, Ram! Welcome to OS Class.
 ```
+
+# Lab 5: Conditional Execution and Termination:
+When a program is running on a computer the Operating system creates a process for it. Program run by communicationg with the OS. This lab shows how a program tells the computer if it finished the job or ran into a problem.
+
+## 1. Creating a c file:
+``` bash
+nano tung.c
+
+```
+
+## 2. Source Code (tung.c):
+``` c
+ #include <stdio.h>
+ #include <unistd.h>
+
+ int main() {
+ int choice;
+
+
+ printf("Current PID: %d\n", getpid());
+
+ printf("Do you want to continue? (1 for Yes, 0
+ for No): ");
+ scanf("%d", &choice);
+
+ if (choice == 1) {
+ printf("Continuing...\n");
+ sleep(5);
+ return 0; // Success
+ } else {
+ printf("Exiting...\n");
+ return 1; // Failure/Abort
+ }
+ }
+```
+
+## 3. Execution and Verification:
+``` bash
+gcc tung.c -o tung
+#choose yes
+./tung
+# current PID: 12400
+# Do you want to continue? (1 for yes and 0 for no) choose 1 utput will be continuing...
+echo $?
+# output:0
+```
