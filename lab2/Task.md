@@ -3,7 +3,7 @@
 This task displays creating a simple C program (`black.c`) that runs for a certain time using `sleep()`, compiling it with GCC, executing the binary, and inspecting running processes using `ps aux`.
 
 
-## 1. Source Code (`black.c`)
+## 1. Source Code (`sleep_timer.c`)
 
 The program prints a starting message and sleeps for 1 second in a loop that runs 30 times (total runtime of 30 seconds), and then prints a completion message.
 
@@ -21,14 +21,14 @@ int main() {
 }
 
 ## 2. Compilation and Execution
-Compiling black.c using GCC to get execuitable binary and then execute it.
+Compiling sleep_timer.c using GCC to get execuitable binary and then execute it.
 
 ``` bash
-nano black.c
+nano sleep_timer.c
 
-gcc black.c -o black
+gcc sleep_timer.c -o sleep_timer
 
-./black
+./sleep_timer
 ```
 above we created a .c file using nano, then compiled it using gcc into executable binary and ran that executable using ./ .
 
@@ -42,7 +42,7 @@ I am finished.
 During the run time of the process or after execution the active process can be viewed in the process table using ps aux piped into grep:
 
 ``` bash
-ps aux | grep black
+ps aux | grep sleep_timer
 ```
 
 ## Process Output Details:
