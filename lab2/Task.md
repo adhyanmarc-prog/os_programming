@@ -57,7 +57,7 @@ This task shows how we can retrieve and inspect process identifiers in C using `
 
 ---
 
-## 1. Source Code (`sugar.c`)
+## 1. Source Code (`ppid.c`)
 
 The program retrieves its own Process ID (PID) and Parent Process ID (PPID) using Linux system calls defined in `<unistd.h>`, prints them, and sleeps for 20 seconds.
 
@@ -79,11 +79,11 @@ int main() {
 compile the .c file using GCC and running the execuitable file.
 
 ``` bash
-nano sugar.c
+nano ppid.c
 
-gcc sugar.c -o sugar
+gcc ppid.c -o ppid
 
-./sugar
+./ppid
 ```
 
 ## Sample Terminal Output:
