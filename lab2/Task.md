@@ -158,11 +158,11 @@ In OS there are two streams standard input (stdin) and standard output (stout). 
 
 ## 1. Creating a c file:
 ``` bash
-nano streams.c
+nano greet_user.c
 
 ```
 
-## 2. Source Code (streams.c)
+## 2. Source Code (`greet_user.c`)
 ``` c
  #include <stdio.h>
 
@@ -180,8 +180,8 @@ nano streams.c
 
 ## 3. Terminal Execution:
 ``` bash
-gcc streams.c -o streams
-./streams
+gcc greet_user.c -o greet_user
+./greet_user
 
 #enter any name Ram then the output will be Hello, Ram! Welcome to OS Class.
 ```
