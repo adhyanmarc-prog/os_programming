@@ -1,4 +1,4 @@
-Lab 3:
+# Lab 3:
 
 This repository contains C programs demonstrating how primitive data types are sized by the compiler/OS and how variables are organized across different segments of a process's virtual address space (Text, Data, BSS, Heap, and Stack).
 
@@ -33,7 +33,7 @@ gcc data_types.c -o data_types
 ./data_types
 ```
 
-Output:
+### Output:
 
 ## 2. Source Code (addresses.c)
 
@@ -75,7 +75,7 @@ gcc addresses.c -o addresses
 ./addresses
 ```
 
-output:
+### output:
 
 
 ## 3. Source Code (data_types.c)
@@ -128,4 +128,4 @@ gcc memory_mapping.c -o memory_mapping
 ./memory_mapping
 ```
 
-output:
+### output:
