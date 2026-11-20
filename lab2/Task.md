@@ -1,6 +1,6 @@
 # Lab 1: Process Creation and Monitoring
 
-This task displays creating a simple C program (`black.c`) that runs for a certain time using `sleep()`, compiling it with GCC, executing the binary, and inspecting running processes using `ps aux`.
+This task displays creating a simple C program (`sleep_timer.c`) that runs for a certain time using `sleep()`, compiling it with GCC, executing the binary, and inspecting running processes using `ps aux`.
 
 
 ## 1. Source Code (`sleep_timer.c`)
@@ -47,13 +47,13 @@ ps aux | grep sleep_timer
 
 ## Process Output Details:
 ps aux displays all the running processes in the system.
-grep black filter outs the process output for process name black.
+grep sleep_timer filter outs the process output for process name sleep_timer.
 
 ---
 
 # Lab 2: Process Identifiers (PID and PPID)
 
-This task shows how we can retrieve and inspect process identifiers in C using `getpid()` and `getppid()`, compile the program (`sugar.c`), run it in the background, and inspect its PID/PPID status from the terminal.
+This task shows how we can retrieve and inspect process identifiers in C using `getpid()` and `getppid()`, compile the program (`ppid.c`), run it in the background, and inspect its PID/PPID status from the terminal.
 
 ---
 
@@ -191,11 +191,11 @@ When a program is running on a computer the Operating system creates a process f
 
 ## 1. Creating a c file:
 ``` bash
-nano tung.c
+nano pid_choice.c
 
 ```
 
-## 2. Source Code (tung.c):
+## 2. Source Code (`pid_choice.c`):
 ``` c
  #include <stdio.h>
  #include <unistd.h>
@@ -223,9 +223,9 @@ nano tung.c
 
 ## 3. Execution and Verification:
 ``` bash
-gcc tung.c -o tung
+gcc pid_choice.c -o pid_choice
 #choose yes
-./tung
+./pid_choice
 # current PID: 12400
 # Do you want to continue? (1 for yes and 0 for no) choose 1 utput will be continuing...
 echo $?
