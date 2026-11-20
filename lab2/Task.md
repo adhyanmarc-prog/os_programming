@@ -115,9 +115,9 @@ When a program finishes running an integer is given to the OS which is stored in
 
 ## 1. Creating c file:
 ``` bash
-nano feed.c
+nano exit_status.c
 ```
-## 2. Source Code (feed.c)
+## 2. Source Code (exit_status.c)
 ``` c
 
 include <stdio.h>
@@ -140,14 +140,14 @@ return 1; // Tell OS: Error
 ## 3. Execution and Verification:
 
 ``` bash
-gcc feed.c -o feed
+gcc exit_status.c -o exit_status
 
-./feed
+./exit_status
 # Enter 5 and the output should be success.
 echo $?
 # Output should be 0 i.e positive input.
 
-./feed
+./exit_status
 # Enter -5 this time the output should be Failure
 echo $?
 # Output should be 1 i.e negative input.
